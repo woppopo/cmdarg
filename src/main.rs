@@ -3,5 +3,5 @@
 mod lib;
 
 fn main() {
-	println!("=> {:?}", lib::parse());
+    println!("=> {:?}", lib::parse());
 }
