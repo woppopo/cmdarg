@@ -1,6 +1,6 @@
-extern crate crap;
+extern crate cmdarg;
 
-use crap::parse;
+use cmdarg::parse;
 
 fn main() {
     println!("=> {:?}", parse());

@@ -1,21 +1,21 @@
-# crap
+# cmdarg
 
 ```
 cargo run -- val -flag --param paramval
-=> Ok([Val("target/debug/crap"), Val("val"), Flag("flag"), Param("param", "paramval")])
+=> Ok([Val("target/debug/cmdarg"), Val("val"), Flag("flag"), Param("param", "paramval")])
 ```
 
 ## Usage
 
 ```
 [dependencies]
-crap = { git = "https://github.com/woppopo/crap" }
+cmdarg = { git = "https://github.com/woppopo/cmdarg" }
 ```
 
 ```rust
-extern use crap;
+extern use cmdarg;
 
 fn main() {
-	let args = crap::parse().unwrap();
+	let args = cmdarg::parse().unwrap();
 }
 ```
